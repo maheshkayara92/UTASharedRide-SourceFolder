@@ -1,0 +1,395 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo1">
+
+    <TextView
+        android:id="@+id/rideno"
+    android:layout_width="122dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:text="RideNo:"
+    android:textStyle="bold"
+    android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/ridenoval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_above="@+id/ridername"
+        android:layout_toRightOf="@+id/rideno"
+        android:layout_toEndOf="@+id/rideno" />
+
+    <TextView
+        android:id="@+id/ridername"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="RiderName:"
+        android:textStyle="bold"
+        android:layout_below="@+id/rideno"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/ridernameval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/ridername"
+        android:layout_toRightOf="@+id/ridername"
+        android:layout_toEndOf="@+id/ridername" />
+
+    <TextView
+        android:id="@+id/riderutaid"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="RiderUTAId:"
+        android:textStyle="bold"
+        android:layout_below="@+id/ridername"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/riderutaidval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/riderutaid"
+        android:layout_toRightOf="@+id/riderutaid"
+        android:layout_toEndOf="@+id/riderutaid" />
+
+    <TextView
+        android:id="@+id/ridedate"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="RideDate:"
+        android:textStyle="bold"
+        android:layout_below="@+id/riderutaid"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/ridedateval"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/ridedate"
+        android:layout_toRightOf="@+id/ridedate" />
+
+    <TextView
+        android:id="@+id/pickpoint"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="PickupPoint:"
+        android:textStyle="bold"
+        android:layout_below="@+id/ridedate"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/pickpointval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/pickpoint"
+        android:layout_toRightOf="@+id/pickpoint"
+        android:layout_toEndOf="@+id/pickpoint" />
+
+    <TextView
+        android:id="@+id/destination"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Destination:"
+        android:textStyle="bold"
+        android:layout_below="@+id/pickpoint"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/destinationval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/destination"
+        android:layout_toRightOf="@+id/destination"
+        android:layout_toEndOf="@+id/destination" />
+
+    <TextView
+        android:id="@+id/vehiclename"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="VehicleName:"
+        android:textStyle="bold"
+        android:layout_below="@+id/destination"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/vehiclenameval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/vehiclename"
+        android:layout_toRightOf="@+id/vehiclename"
+        android:layout_toEndOf="@+id/vehiclename" />
+
+    <TextView
+        android:id="@+id/vehiclecapacity"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="VehicleCapacity:"
+        android:textStyle="bold"
+        android:layout_below="@+id/vehiclename"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/vehiclecapacityval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/vehiclecapacity"
+        android:layout_toRightOf="@+id/vehiclecapacity"
+        android:layout_toEndOf="@+id/vehiclecapacity" />
+
+    <TextView
+        android:id="@+id/passengercount"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="PassengerCount:"
+        android:textStyle="bold"
+        android:layout_below="@+id/vehiclecapacity"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/passengercountval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/passengercount"
+        android:layout_toRightOf="@+id/passengercount"
+        android:layout_toEndOf="@+id/passengercount" />
+
+    <TextView
+        android:id="@+id/chargepermile"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="ChargePermile:"
+        android:textStyle="bold"
+        android:layout_below="@+id/passengercount"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/chargepermileval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/chargepermile"
+        android:layout_toRightOf="@+id/chargepermile"
+        android:layout_toEndOf="@+id/chargepermile" />
+
+    <TextView
+        android:id="@+id/ridestatus"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="RideStatus:"
+        android:textStyle="bold"
+        android:layout_below="@+id/chargepermile"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/ridestatusval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/ridestatus"
+        android:layout_toRightOf="@+id/ridestatus"
+        android:layout_toEndOf="@+id/ridestatus" />
+
+    <TextView
+        android:id="@+id/comments"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Comments:"
+        android:textStyle="bold"
+        android:layout_below="@+id/ridestatus"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/commentsval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/comments"
+        android:layout_toRightOf="@+id/comments"
+        android:layout_toEndOf="@+id/comments" />
+
+    <TextView
+        android:id="@+id/ridebookeddate"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="BookedDate:"
+        android:textStyle="bold"
+        android:layout_below="@+id/comments"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/ridebookeddateval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/ridebookeddate"
+        android:layout_toRightOf="@+id/ridebookeddate"
+        android:layout_toEndOf="@+id/ridebookeddate" />
+
+    <TextView
+        android:id="@+id/totaldistance"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="TotalDistance:"
+        android:textStyle="bold"
+        android:layout_below="@+id/ridebookeddate"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/totaldistanceval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/totaldistance"
+        android:layout_toRightOf="@+id/totaldistance"
+        android:layout_toEndOf="@+id/totaldistance" />
+
+    <TextView
+        android:id="@+id/totalcharge"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="TotalCharge:"
+        android:textStyle="bold"
+        android:layout_below="@+id/totaldistance"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/totalchargeval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/totalcharge"
+        android:layout_toRightOf="@+id/totalcharge"
+        android:layout_toEndOf="@+id/totalcharge" />
+
+    <TextView
+        android:id="@+id/chargeperhead"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="ChargePerhead:"
+        android:textStyle="bold"
+        android:layout_below="@+id/totalcharge"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/chargeperheadval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/chargeperhead"
+        android:layout_toRightOf="@+id/chargeperhead"
+        android:layout_toEndOf="@+id/chargeperhead" />
+
+    <TextView
+        android:id="@+id/notifiedyn"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Notified:"
+        android:textStyle="bold"
+        android:layout_below="@+id/chargeperhead"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/notifiedynval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/notifiedyn"
+        android:layout_toRightOf="@+id/notifiedyn"
+        android:layout_toEndOf="@+id/notifiedyn" />
+
+    <TextView
+        android:id="@+id/commuterdetails"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="CommuterDetails:"
+        android:textStyle="bold"
+        android:layout_below="@+id/notifiedyn"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:id="@+id/commuterheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/commuterdetails"
+        >
+        <TextView android:id="@+id/column1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1.49"/>
+        <TextView android:id="@+id/column2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="UTAId"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1" />
+        <TextView android:id="@+id/column3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="MobileNo"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1"/>
+        <TextView android:id="@+id/column4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="EmailId"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/commuterlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/commuterheader">
+    </ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JOIN"
+        android:id="@+id/button"
+        android:onClick="sendJoinAckMethod"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+</ScrollView>

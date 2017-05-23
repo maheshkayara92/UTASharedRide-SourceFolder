@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo1">
+
+    <TextView
+        android:id="@+id/bridername"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="RiderName:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/briderspinner"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:hint="Rider Name"
+        android:textSize="15sp"
+        android:layout_alignLeft="@+id/briderutaidval"
+        android:layout_alignStart="@+id/briderutaidval"
+        android:layout_above="@+id/briderutaidval"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/briderutaid"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bridername"
+        android:layout_marginTop="10dip"
+        android:text="RiderUTAId:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/briderutaidval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_above="@+id/bridedate"
+        android:layout_alignLeft="@+id/bridedateval"
+        android:layout_alignStart="@+id/bridedateval" />
+
+    <TextView
+        android:id="@+id/bridedate"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/briderutaid"
+        android:layout_marginTop="10dip"
+        android:text="RideDate:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/bridedateval"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:hint="Enter Date"
+        android:textSize="15sp"
+        android:layout_above="@+id/bpickpointval"
+        android:layout_alignLeft="@+id/bpickpointval"
+        android:layout_alignStart="@+id/bpickpointval"
+        android:layout_below="@+id/briderutaidval" />
+
+    <EditText
+        android:id="@+id/bridetimeval"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:hint="Enter Time"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/briderutaidval"
+        android:layout_alignTop="@+id/bridedateval"
+        android:layout_above="@+id/bpickpointval"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:id="@+id/bpickpoint"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bridedate"
+        android:layout_marginTop="10dip"
+        android:text="PickupPoint:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/bpickpointval"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:hint="Enter Pickup Point"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:layout_above="@+id/bdestinationval"
+        android:layout_alignLeft="@+id/bdestinationval"
+        android:layout_alignStart="@+id/bdestinationval" />
+
+    <TextView
+        android:id="@+id/bdestination"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bpickpoint"
+        android:layout_marginTop="10dip"
+        android:text="Destination:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/bdestinationval"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:hint="Enter Destination"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:layout_alignLeft="@+id/bvehiclenameval"
+        android:layout_alignStart="@+id/bvehiclenameval"
+        android:layout_above="@+id/bvehiclenameval" />
+
+    <TextView
+        android:id="@+id/bvehiclename"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bdestination"
+        android:layout_marginTop="10dip"
+        android:text="VehicleName:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bvehiclenameval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignBottom="@+id/bvehiclename"
+        android:layout_alignLeft="@+id/bvehiclecapacityval"
+        android:layout_alignStart="@+id/bvehiclecapacityval" />
+
+    <TextView
+        android:id="@+id/bvehiclecapacity"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bvehiclename"
+        android:layout_marginTop="10dip"
+        android:text="VehicleCapacity:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bvehiclecapacityval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignBottom="@+id/bvehiclecapacity"
+        android:layout_alignLeft="@+id/btnLinkTobookride"
+        android:layout_alignStart="@+id/btnLinkTobookride" />
+
+    <TextView
+        android:id="@+id/bcomments"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bvehiclecapacity"
+        android:layout_marginTop="10dip"
+        android:text="Comments:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/bcommentsval"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/bcomments"
+        android:layout_alignLeft="@+id/bvehiclecapacityval"
+        android:layout_alignStart="@+id/bvehiclecapacityval" />
+
+    <Button
+        android:id="@+id/btnLinkTobookride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Ridebook"
+        android:text="Book Ride"
+        android:layout_below="@+id/bcomments"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+</RelativeLayout>

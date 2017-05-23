@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo1">
+
+    <TextView
+        android:id="@+id/bridername"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:text="RiderName:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/btnLinkTobookride"
+        android:layout_toStartOf="@+id/btnLinkTobookride"
+        android:layout_alignParentTop="true" />
+
+    <Spinner
+        android:id="@+id/briderspinner"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:hint="Click to Select"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/briderutaidval"
+        android:layout_alignStart="@+id/briderutaidval" />
+
+    <TextView
+        android:id="@+id/briderutaid"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:text="RiderUTAId:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/briderutaidval"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/briderutaidval"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_above="@+id/bridedateval"
+        android:layout_alignLeft="@+id/bridedateval"
+        android:layout_alignStart="@+id/bridedateval"
+        android:layout_marginBottom="34dp" />
+
+    <TextView
+        android:id="@+id/bridedate"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:text="RideDate:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/bridedateval"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/bridedateval"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:hint="Enter Date"
+        android:textSize="15sp"
+        android:layout_above="@+id/btnLinkTobookride"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:id="@+id/btnLinkTobookride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Ride"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

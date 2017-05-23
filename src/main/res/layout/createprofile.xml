@@ -1,0 +1,264 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/logo1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name : "
+                android:id="@+id/FirstName"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="23dp" />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextFirstName"
+                android:layout_above="@+id/LastName"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/FirstName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name : "
+                android:id="@+id/LastName"
+                android:layout_marginTop="23dp"
+                android:layout_below="@+id/FirstName"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextLastName"
+                android:layout_alignBottom="@+id/LastName"
+                android:layout_toRightOf="@+id/FirstName"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText2"
+                android:layout_alignBottom="@+id/FirstName"
+                android:layout_toRightOf="@+id/editTextLastName"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student ID : "
+                android:id="@+id/StudentID"
+                android:layout_below="@+id/LastName"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="24dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextStudentID"
+                android:layout_alignBottom="@+id/StudentID"
+                android:layout_alignRight="@+id/editTextLastName"
+                android:layout_alignEnd="@+id/editTextLastName"
+                android:layout_toRightOf="@+id/StudentID"
+                android:layout_toEndOf="@+id/StudentID" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number :"
+                android:id="@+id/MobileNumber"
+                android:layout_below="@+id/editTextStudentID"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="24dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextMobileNumber"
+                android:layout_alignBottom="@+id/MobileNumber"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/MobileNumber"
+                android:layout_toEndOf="@+id/MobileNumber" />
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_below="@+id/editTextMobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/genderType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender : "/>
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:checked="true"
+                    android:layout_above="@+id/radioCommuter"
+                    android:layout_alignLeft="@+id/genderType"/>
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:layout_toRightOf="@+id/radioMale" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroupUser"
+                android:layout_below="@+id/radioGroupGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/userType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User : "/>
+
+                <RadioButton
+                    android:id="@+id/radioCommuter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Commuter"
+                    android:checked="true"
+                    android:layout_above="@+id/radioCommuter"
+                    android:layout_alignLeft="@+id/userType"/>
+
+                <RadioButton
+                    android:id="@+id/radioRider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rider"
+                    android:layout_toRightOf="@+id/radioCommuter" />
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:onClick="SubmitAsCommuterMethod"
+                android:id="@+id/buttonSubmitAsCommuter"
+                android:layout_below="@+id/radioGroupUser"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="License Number : "
+                android:id="@+id/LicenseNumber"
+                android:layout_below="@+id/buttonSubmitAsCommuter"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextLicenseNumber"
+                android:layout_alignBottom="@+id/LicenseNumber"
+                android:layout_alignEnd="@+id/editTextMobileNumber"
+                android:layout_toEndOf="@+id/LicenseNumber" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Number : "
+                android:id="@+id/VehicleNumber"
+                android:layout_below="@+id/LicenseNumber"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="26dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextVehicleNumber"
+                android:layout_alignBottom="@+id/VehicleNumber"
+                android:layout_alignEnd="@+id/editTextMobileNumber"
+                android:layout_toEndOf="@+id/LicenseNumber" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Name  : "
+                android:id="@+id/VehicleName"
+                android:layout_below="@+id/VehicleNumber"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="24dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextVehicleName"
+                android:layout_alignBottom="@+id/VehicleName"
+                android:layout_alignStart="@+id/editTextVehicleNumber"
+                android:layout_alignEnd="@+id/editTextMobileNumber" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Capacity : "
+                android:id="@+id/VehicleCapacity"
+                android:layout_below="@+id/VehicleName"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="24dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextVehicleCapacity"
+                android:layout_alignBottom="@+id/VehicleCapacity"
+                android:layout_alignEnd="@+id/editTextMobileNumber"
+                android:layout_toEndOf="@+id/VehicleCapacity" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ChargePerMile : "
+                android:id="@+id/ChargePerMile"
+                android:layout_below="@+id/VehicleCapacity"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="24dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextChargePerMile"
+                android:layout_alignBottom="@+id/ChargePerMile"
+                android:layout_alignEnd="@+id/editTextMobileNumber"
+                android:layout_toEndOf="@+id/VehicleCapacity" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:onClick="SubmitAsRiderMethod"
+                android:id="@+id/buttonSubmitAsRider"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/buttonSubmitAsCommuter"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/editTextChargePerMile"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
